@@ -6,13 +6,13 @@ class Mahasiswa {
     String nim;
     int nilai;
 
-    void datamahasiswa() {
+    void tampilkanData() {
         System.out.println("Nama: " + nama);
         System.out.println("NIM: " + nim);
         System.out.println("Nilai: " + nilai);
     }
 
-    void ceklulus() {
+    void cekKelulusan() {
         if (nilai >= 60) {
             System.out.println("Lulus");
         } else {
@@ -52,8 +52,8 @@ public class ProgramMahasiswa {
 
             System.out.println("\nMahasiswa ke-" + (i + 1));
 
-            mhs[i].datamahasiswa();
-            mhs[i].ceklulus();
+            mhs[i].tampilkanData();
+            mhs[i].cekKelulusan();
         }
 
         input.close();
