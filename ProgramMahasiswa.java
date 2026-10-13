@@ -1,17 +1,18 @@
 import java.util.Scanner;
 
 class Mahasiswa {
+
     String nama;
     String nim;
     int nilai;
 
-    void tampilkanData() {
+    void datamahasiswa() {
         System.out.println("Nama: " + nama);
         System.out.println("NIM: " + nim);
         System.out.println("Nilai: " + nilai);
     }
 
-    void cekKelulusan() {
+    void ceklulus() {
         if (nilai >= 60) {
             System.out.println("Lulus");
         } else {
@@ -21,12 +22,15 @@ class Mahasiswa {
 }
 
 public class ProgramMahasiswa {
+
     public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
 
         Mahasiswa[] mhs = new Mahasiswa[3];
 
         for (int i = 0; i < 3; i++) {
+
             mhs[i] = new Mahasiswa();
 
             System.out.println("\nMahasiswa ke-" + (i + 1));
@@ -45,9 +49,11 @@ public class ProgramMahasiswa {
         System.out.println("\n=== DATA MAHASISWA ===");
 
         for (int i = 0; i < 3; i++) {
+
             System.out.println("\nMahasiswa ke-" + (i + 1));
-            mhs[i].tampilkanData();
-            mhs[i].cekKelulusan();
+
+            mhs[i].datamahasiswa();
+            mhs[i].ceklulus();
         }
 
         input.close();
